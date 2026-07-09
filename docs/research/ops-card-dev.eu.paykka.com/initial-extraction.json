@@ -1,0 +1,58 @@
+{
+  "title": "PayKKa收单运营平台",
+  "currentUrl": "https://ops-card-dev.eu.paykka.com/login?redirect=/gateway-order-refund-list",
+  "bodyText": "跨境收单运营平台\n登录\n用户名\n请输入\n密码\n忘记密码?\n请输入\n验证码\n请输入\n登录\nCopyright © 2026 XGD EUROPE All rights reserved.",
+  "extraction": {
+    "title": "PayKKa收单运营平台",
+    "url": "https://ops-card-dev.eu.paykka.com/login?redirect=/gateway-order-refund-list",
+    "fonts": [
+      "Times",
+      "\"PuHuiTi Regular\", \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+    ],
+    "images": [
+      {
+        "src": "https://ops-card-dev.eu.paykka.com/logo.png",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://ops-card-dev.eu.paykka.com/assets/login-bg-DDlzjV8D.png",
+        "alt": "",
+        "width": 2400,
+        "height": 2160
+      },
+      {
+        "src": "data:image/png;base64,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",
+        "alt": "",
+        "width": 110,
+        "height": 40
+      }
+    ],
+    "svgCount": 1,
+    "bodyText": "跨境收单运营平台\n登录\n用户名\n请输入\n密码\n忘记密码?\n请输入\n验证码\n请输入\n登录\nCopyright © 2026 XGD EUROPE All rights reserved.",
+    "appClasses": "",
+    "appStyles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"PuHuiTi Regular\", \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "lineHeight": "22.4px",
+      "color": "rgb(0, 0, 0)",
+      "width": "1440px",
+      "height": "900px",
+      "display": "block",
+      "flexDirection": "row",
+      "border": "0px none rgb(0, 0, 0)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    },
+    "favicons": [
+      "https://ops-card-dev.eu.paykka.com/favicon.ico"
+    ],
+    "cssLinks": [
+      "https://ops-card-dev.eu.paykka.com/assets/index-BgOA9YlW.css",
+      "https://ops-card-dev.eu.paykka.com/assets/index-7x9wAJHp.css"
+    ]
+  }
+}
