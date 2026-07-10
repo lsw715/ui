@@ -195,7 +195,7 @@ export const mockMpsTransactionDetail: MpsTransactionDetail = {
   merchantProductName: "SEA Local Checkout",
   showRefundBtnFlag: true,
   refundableAmount: { amount: "1500.00", currency: "THB" },
-  refundStrategy: "PAYOUT_LINK",
+  refundStrategy: "PAYOUT",
 };
 
 export const mockMpsTransactionDetailNative: MpsTransactionDetail = {

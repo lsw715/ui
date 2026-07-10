@@ -212,16 +212,27 @@ export function MpsTransactionDetail({
         onClose={() => setRefundOpen(false)}
         gatewayOrderId={data.gatewayOrderId}
         transId={data.transId}
+        paymentMethod={data.paymentMethod}
         paymentMethodLabel={paymentLabel}
         refundableAmount={data.refundableAmount}
         requirePayPassword
+        requireBeneficiary={data.refundStrategy === "PAYOUT"}
         payoutHint={
-          data.refundStrategy === "PAYOUT_LINK"
-            ? "本单将走代付退款，审核通过后系统自动向消费者发送收款链接。"
-            : undefined
+          data.refundStrategy === "PAYOUT"
+            ? "本单走代付退款：请向消费者收集收款账户后一并填写，审核通过后将直接打款。"
+            : data.refundStrategy === "PAYOUT_LINK"
+              ? "本单将走代付退款，审核通过后系统自动向消费者发送收款链接。"
+              : undefined
         }
-        onSubmit={() => {
-          setSubmitMsg("退款申请已提交，等待审核。");
+        onSubmit={(payload) => {
+          const masked = payload.beneficiary?.accountNumber
+            ? `****${payload.beneficiary.accountNumber.slice(-4)}`
+            : "";
+          setSubmitMsg(
+            payload.beneficiary
+              ? `退款申请已提交（收款人 ${payload.beneficiary.beneficiaryName} ${masked}），等待审核。`
+              : "退款申请已提交，等待审核。",
+          );
         }}
       />
     </div>

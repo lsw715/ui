@@ -4,12 +4,7 @@ import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const THAI_BANKS = [
-  { code: "002", name: "Bangkok Bank" },
-  { code: "004", name: "Kasikorn Bank" },
-  { code: "006", name: "Krung Thai Bank" },
-  { code: "014", name: "Siam Commercial Bank" },
-];
+import { THAI_BANKS } from "@/data/beneficiary-templates";
 
 interface PayoutLinkFormProps {
   merchantName: string;

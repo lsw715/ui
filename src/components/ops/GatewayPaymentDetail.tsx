@@ -80,7 +80,9 @@ export function GatewayPaymentDetail({
   const payoutHint =
     refundStrategy === "PAYOUT_LINK"
       ? "本单走代付退款：提交后先审核，通过后系统自动向消费者发送收款链接，无需填写卡号。"
-      : undefined;
+      : refundStrategy === "PAYOUT"
+        ? "本单走代付退款：须填写消费者收款信息，审核通过后直接打款。"
+        : undefined;
 
   return (
     <div className="flex min-h-0 flex-1 flex-col gap-4">
@@ -210,8 +212,10 @@ export function GatewayPaymentDetail({
         onClose={() => setRefundOpen(false)}
         gatewayOrderId={data.gatewayOrderId}
         transId={data.transId}
+        paymentMethod={data.paymentMethod}
         paymentMethodLabel={paymentLabel}
         refundableAmount={data.refundableAmount}
+        requireBeneficiary={refundStrategy === "PAYOUT"}
         payoutHint={payoutHint}
         onSubmit={() => {
           setMessage("退款申请已提交，等待审核。");

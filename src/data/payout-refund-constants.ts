@@ -14,6 +14,7 @@ export const REFUND_TYPE_LABELS: Record<RefundType, string> = {
 export const REFUND_STRATEGY_LABELS: Record<RefundStrategy, string> = {
   NATIVE: "原路退",
   PAYOUT_LINK: "代付退（收款链接）",
+  PAYOUT: "代付退（商户收集）",
   NOT_SUPPORTED: "不可退",
 };
 

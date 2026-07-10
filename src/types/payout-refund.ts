@@ -2,7 +2,7 @@
 export type RefundType = "NATIVE" | "PAYOUT_LINK";
 
 /** 可退策略（查可退金额接口返回） */
-export type RefundStrategy = "NATIVE" | "PAYOUT_LINK" | "NOT_SUPPORTED";
+export type RefundStrategy = "NATIVE" | "PAYOUT_LINK" | "PAYOUT" | "NOT_SUPPORTED";
 
 /** 链接发送方式 */
 export type LinkDeliveryType = "SMS" | "EMAIL" | "LINK_ONLY";
